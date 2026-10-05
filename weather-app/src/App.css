@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg,#4facfe,#00f2fe);
+}
+.weather-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.header h1 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 8px;
+}
+.header p {
+  color: #525151;
+  font-size: 17px;
+}
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+.search-box input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+.search-box input:focus {
+  border-color: #4facfe;
+}
+.search-box button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #1677ff;
+  color: white;
+  font-size: 18px;
+  font-weight: 550;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.search-box button:hover {
+  background: #005ed8;
+}
+.weather-card {
+  margin-top: 30px;
+  text-align: center;
+}
+.location h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+.weather-icon {
+  width: 110px;
+  height: 110px;
+}
+.temperature {
+  font-size: 60px;
+  color: #222;
+  margin: 5px 0;
+}
+.condition {
+  font-size: 19px;
+  color: #555;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.details {
+  display: flex;
+  gap: 12px;
+}
+.detail-box {
+  flex: 1;
+  padding: 18px 10px;
+  background: #f5f8fc;
+  border-radius: 12px;
+  border: 1px solid #e5e9ef;
+}
+.detail-box span {
+  display: block;
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.detail-box strong {
+  font-size: 16px;
+  color: #222;
+}
+.message {
+  text-align: center;
+  margin-top: 25px;
+  color: #555;
+}
+.error {
+  text-align: center;
+  margin-top: 25px;
+  padding: 12px;
+border-radius: 10px;
+  background: #ffe5e5;
+  color: #d00000;
+}
+.welcome {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+}
+@media (max-width: 600px) {
+
+  .weather-container {
+    padding: 25px 20px;
+  }
+  .header h1 {
+    font-size: 28px;
+  }
+  .search-box {
+    flex-direction: column;
+  }
+  .search-box button {
+    width: 100%;
+  }
+  .temperature {
+    font-size: 50px;
+  }
+  .details {
+    flex-direction: column;
+  }
+}
+
