@@ -1,98 +1,16 @@
-# CODEVEDX Frontend Development Projects
+# React + Vite
 
-This repository contains my frontend development projects completed as part of the **CodeVedX Frontend Development Internship**.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Projects
+Currently, two official plugins are available:
 
-### 1. Task Manager
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-A simple and responsive task management application built with React.
+## React Compiler
 
-#### Features
-- Add, edit, and delete tasks
-- Mark tasks as completed
-- All, Pending, and Completed filters
-- Dark and Light mode
-- LocalStorage persistence
-- Responsive design
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-#### Tech Stack
-- HTML5
-- CSS3
-- JavaScript
-- React
-- Vite
-- LocalStorage
+## Expanding the Oxlint configuration
 
----
-
-### 2. Weather App
-
-A weather application that allows users to search for current weather information by city.
-
-#### Features
-- Search weather by city name
-- Display current temperature and weather conditions
-- Weather icons
-- Feels-like temperature
-- Humidity and wind speed
-- Loading messages and error handling
-- Search by pressing Enter
-- Responsive design
-
-#### Tech Stack
-- HTML5
-- CSS3
-- JavaScript
-- React
-- Vite
-- OpenWeather API
-
----
-
-### 3. PardhuCart — E-Commerce Shopping Application
-
-A responsive e-commerce application built with React, featuring product browsing and interactive shopping cart management.
-
-#### Features
-- Browse a collection of products
-- View product details
-- Add products to the shopping cart
-- Increase or decrease product quantities
-- Remove items from the cart
-- Calculate cart totals
-- Persist cart data using LocalStorage
-- Responsive user interface
-
-#### Tech Stack
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- React
-- Vite
-- React Context API
-- LocalStorage
-
----
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- React
-- Vite
-- REST APIs
-- React Context API
-- LocalStorage
-- Git
-- GitHub
-
-## Learning Outcomes
-
-Through these projects, I practiced building reusable React components, managing application state, handling user interactions, integrating APIs, persisting data in the browser, and creating responsive user interfaces.
-
----
-
-**Developed by Pardhu**  
-Frontend Development Internship — CodeVedX
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
